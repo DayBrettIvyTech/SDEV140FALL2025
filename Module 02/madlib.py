@@ -5,8 +5,8 @@ Author: Brett Day
 '''
 
 ADJECTIVE = "Enter an adjective: "
-NOUN = "Enter a Noun"
-PLURAL_NOUN = "Enter a Plugral Noun: "
+NOUN = "Enter a Noun: " 
+PLURAL_NOUN = "Enter a Plural Noun: "
 GAME = "Enter a Game: "
 ING_VERB = "Enter a verb ending in ING: "
 PLANT = "Enter a plant: "
