@@ -45,7 +45,7 @@ if operation == "1":
 
     print(f"{binary_number} is {hex_number} in hexadecimal")
 
-elif operation == 2:
+elif operation == "2":
     valid_num = False
     while not valid_num: 
         hex_number = input("Enter a Hexadecimal Number: ")
@@ -56,11 +56,31 @@ elif operation == 2:
                 valid_num = False
                 break
 
+elif operation == "3":
+    valid_decimal = False
+    while not valid_decimal: 
+        decimal_num = input("Enter a Decimal Number: ")
+        decimal_num = decimal_num.replace("-", "")
+        decimal_num = decimal_num.replace("+", "")
+        valid_decimal = True
+        for digit in decimal_num:
+            if not digit.isdigit():3 
+                valid_decimal = False
+                print(f"There are Non Decimal Digits: {digit}")
+        decimal_num = int(decimal_num)
+        binary_number = ""
+        while decimal_num != 0:
+            binary_number = str(decimal_num % 2) + binary_number
+            decimal_num = int(decimal_num / 2)
+            print(f"{decimal_num} is {binary_number} in binary")
+        
+
     binary_number = ""
     for digit in hex_number:
         binary_number = binary_number + hex_digits[digit.upper()]
 
     print(f"{hex_number} in binary is {binary}")
+
 elif operation == "4":
     valid_binary_num = False
     while not valid_binary_num:
