@@ -64,7 +64,7 @@ elif operation == "3":
         decimal_num = decimal_num.replace("+", "")
         valid_decimal = True
         for digit in decimal_num:
-            if not digit.isdigit():3 
+            if not digit.isdigit(): 
                 valid_decimal = False
                 print(f"There are Non Decimal Digits: {digit}")
         decimal_num = int(decimal_num)
